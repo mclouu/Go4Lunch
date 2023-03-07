@@ -27,7 +27,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //2 - Inflate the menu and add it to the Toolbar
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return true;
     }
