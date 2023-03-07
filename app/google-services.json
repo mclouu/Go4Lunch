@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205932554506",
+    "project_id": "roms-ocr",
+    "storage_bucket": "roms-ocr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205932554506:android:b79fed39f82aca0bbef2f3",
+        "android_client_info": {
+          "package_name": "com.roms.go4lunch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205932554506-681n6huj79fdctshd96hb9cimpgsne9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFPlcbeigNVFkgw1If6YtRbm85QEhdw-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205932554506-681n6huj79fdctshd96hb9cimpgsne9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
