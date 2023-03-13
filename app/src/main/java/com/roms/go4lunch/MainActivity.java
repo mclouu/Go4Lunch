@@ -1,4 +1,4 @@
-package com.roms.go4lunch.ui;
+package com.roms.go4lunch;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,7 +11,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
-import com.roms.go4lunch.R;
 import com.roms.go4lunch.databinding.ActivityMainBinding;
 
 import java.util.Objects;
@@ -71,11 +70,11 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
         int id = item.getItemId();
 
         switch (id){
-            case R.id.menu_drawer_1 :
+            case R.id.nav_map:
                 break;
-            case R.id.menu_drawer_2:
+            case R.id.nav_list:
                 break;
-            case R.id.menu_drawer_3:
+            case R.id.nav_workmates:
                 break;
             default:
                 break;
