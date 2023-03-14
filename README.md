@@ -10,23 +10,23 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/Ehviewer-Overhauled/Ehviewer#description">
+    <a href="https://github.com/mclouu/Go4Lunch#description">
     Description
     </a>
     <span> | </span>
-    <a href="https://github.com/Ehviewer-Overhauled/Ehviewer#download">
+    <a href="https://github.com/mclouu/Go4Lunch#download">
     Download
     </a>
     <span> | </span>
-    <a href="https://github.com/Ehviewer-Overhauled/Ehviewer#screenshot">
+    <a href="https://github.com/mclouu/Go4Lunch#screenshot">
     Screenshot
     </a>
     <span> | </span>
-    <a href="https://github.com/Ehviewer-Overhauled/Ehviewer#thanks">
+    <a href="https://github.com/mclouu/Go4Lunch#thanks">
     Thanks
     </a>
     <span> | </span>
-    <a href="https://github.com/Ehviewer-Overhauled/Ehviewer#license">
+    <a href="https://github.com/mclouu/Go4Lunch#license">
     License
     </a>
   </h3>
@@ -40,12 +40,11 @@ with [Material Design 3](https://m3.material.io/) and [Dynamic Color](https://m3
 
 # Download
 
-<a href="#"><img alt="Get it on GitHub" src="https://github.com/mclouu/Go4Lunch/tree/master/art/get-it-on-github.svg" width="200px"/></a>
+<a href="#"><img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mclouu/Go4Lunch/0fcc4e196278414ba594b4e0c2d90a425df8b5c6/art/get-it-on-github.svg" width="200px"/></a>
 
 # Screenshot
 
-![screenshot-01](https://github.com/Ehviewer-Overhauled/Art/blob/master/screenshot-01.png)
-![screenshot-02](https://github.com/Ehviewer-Overhauled/Art/blob/master/screenshot-02.png)
+
 
 # Thanks
 
