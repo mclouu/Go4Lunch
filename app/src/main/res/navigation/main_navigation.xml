@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_map">
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.roms.go4lunch.LoginActivity"
+        android:label="@string/login"
+        tools:layout="@layout/activity_login" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.roms.go4lunch.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.roms.go4lunch.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/nav_workmates"
+        android:name="com.roms.go4lunch.ui.workmates.WorkmatesFragment"
+        android:label="@string/menu_workmates"
+        tools:layout="@layout/fragment_workmates" />
+
+    <fragment
+        android:id="@+id/nav_lunch"
+        android:name="com.roms.go4lunch.ui.lunch.LunchFragment"
+        android:label="@string/menu_drawer_lunch"
+        tools:layout="@layout/fragment_workmates" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.roms.go4lunch.ui.setting.SettingsFragment"
+        android:label="@string/menu_drawer_setting"/>
+
+
+</navigation>
