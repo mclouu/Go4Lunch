@@ -14,8 +14,7 @@
 
         <SwitchPreference
             app:key="Theme"
-            app:title="Theme"
-        />
+            app:title="Theme" />
 
     </PreferenceCategory>
 

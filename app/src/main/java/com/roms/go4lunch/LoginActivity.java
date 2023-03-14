@@ -1,4 +1,4 @@
-package com.roms.go4lunch.ui;
+package com.roms.go4lunch;
 
 
 import android.content.Intent;
@@ -12,7 +12,6 @@ import com.firebase.ui.auth.IdpResponse;
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.roms.go4lunch.R;
 import com.roms.go4lunch.databinding.ActivityLoginBinding;
 
 import java.util.Arrays;
@@ -25,7 +24,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
 
     private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
-            result -> onSignInResult(result)
+            this::onSignInResult
     );
 
     @Override
@@ -50,7 +49,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
         if (result.getResultCode() == RESULT_OK) {
             // Successfully signed in
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            Intent b = new Intent(this, MainActivity.class);
+            Intent b = new Intent(this, NewMainActivity.class);
             startActivity(b);
         } else {
             // Sign in failed. If response is null the user canceled the
@@ -76,7 +75,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding> {
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
                 .setLogo(R.mipmap.ic_launcher_round)
-                .setTheme(R.style.LoginTheme1)
+                .setTheme(R.style.AppTheme)
                 .setIsSmartLockEnabled(true, true)
                 .build();
         signInLauncher.launch(signInIntent);

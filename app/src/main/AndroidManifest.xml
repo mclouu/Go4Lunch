@@ -39,9 +39,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity android:name=".NewMainActivity">-->
+        <!--        <activity android:name=".NewMainActivity">-->
 
-<!--        </activity>-->
+        <!--        </activity>-->
     </application>
 
 </manifest>

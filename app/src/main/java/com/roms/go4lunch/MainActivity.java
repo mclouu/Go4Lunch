@@ -35,15 +35,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
     }
 
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
         return true;
     }
 
-    private void configureToolbar(){
+    private void configureToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -57,7 +55,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         if (this.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             this.drawerLayout.closeDrawer(GravityCompat.START);
         } else {
@@ -69,7 +67,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements N
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        switch (id){
+        switch (id) {
             case R.id.nav_map:
                 break;
             case R.id.nav_list:

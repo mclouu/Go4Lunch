@@ -11,7 +11,6 @@ import com.roms.go4lunch.R;
 public class SettingsFragment extends PreferenceFragmentCompat {
 
 
-
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.root_preferences, rootKey);
@@ -22,9 +21,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         boolean a = switchTheme.isChecked();
 
 
-        if (a){
+        if (a) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        }else{
+        } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
 

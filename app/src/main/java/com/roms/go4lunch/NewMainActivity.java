@@ -39,8 +39,6 @@ public class NewMainActivity extends BaseActivity<ActivityMainBinding> {
         NavController navController = Objects.requireNonNull(navHostFragment).getNavController();
 
 
-
-
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 navController.getGraph())
                 .setOpenableLayout(drawer)
