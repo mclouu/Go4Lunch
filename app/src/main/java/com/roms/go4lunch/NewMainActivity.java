@@ -11,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.roms.go4lunch.databinding.ActivityMainBinding;
 
@@ -31,12 +32,14 @@ public class NewMainActivity extends BaseActivity<ActivityMainBinding> {
 
         Toolbar toolbar = binding.appBarMain.toolbar;
         DrawerLayout drawer = binding.activityMainDrawerLayout;
+        BottomNavigationView bottomNav = binding.bottomNav;
         NavigationView navigationView = binding.drawerNavigation;
 
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         NavController navController = Objects.requireNonNull(navHostFragment).getNavController();
 
-//        R.id.nav_lunch, R.id.nav_setting
+
+
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 navController.getGraph())
@@ -46,7 +49,7 @@ public class NewMainActivity extends BaseActivity<ActivityMainBinding> {
         setSupportActionBar(toolbar);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
+        NavigationUI.setupWithNavController(bottomNav, navController);
     }
 
     @Override

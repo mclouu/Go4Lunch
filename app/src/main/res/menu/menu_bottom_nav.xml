@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:enabled="true"
+            android:icon="@drawable/ic_map"
+            android:title="@string/menu_map" />
+
+        <item
+            android:id="@+id/nav_list"
+            android:enabled="true"
+            android:icon="@drawable/ic_list_black"
+            android:title="@string/menu_list" />
+
+        <item
+            android:id="@+id/nav_workmates"
+            android:enabled="true"
+            android:icon="@drawable/ic_supervisor_account_black"
+            android:title="@string/menu_workmates" />
+    </group>
+</menu>
