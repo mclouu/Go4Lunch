@@ -1,4 +1,4 @@
-package com.roms.go4lunch.ui;
+package com.roms.go4lunch;
 
 import android.os.Bundle;
 import android.view.View;
